@@ -12,7 +12,9 @@ phases:
     commands:
       - echo Building the Spring Boot application
       - java -version
-      - ./gradlew clean bootWar
+      - echo "===== BUILD START ====="
+      - ./gradlew clean bootWar --stacktrace
+      - echo "===== BUILD END ====="
       - ls -l build/libs/
       - mv build/libs/*.war myapp.war
   post_build:
