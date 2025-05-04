@@ -64,7 +64,7 @@ dependencies {
 	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 
     //AWS Systems Manager Parameter Store 의존성 추가
-    implementation 'io.awspring.cloud:spring-cloud-starter-aws-parameter-store-config'
+    implementation 'io.awspring.cloud:spring-cloud-starter-aws-parameter-store-config:2.4.2'
 }
 
 tasks.named('test') {
