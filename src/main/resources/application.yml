@@ -38,13 +38,12 @@ spring:
     restart:
       enabled: true
 
-  spring:
-    cloud:
-      aws:
-        region:
-          static: ap-northeast-2 # 실제 리전
-        credentials:
-          profile-name: default # 또는 IAM 역할로 설정
+  cloud:
+    aws:
+      region:
+        static: ap-northeast-2 # 실제 리전
+      # credentials:
+      #  profile-name: default # 또는 IAM 역할로 설정
 
 # MyBatis 설정
 mybatis:
