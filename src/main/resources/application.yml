@@ -15,7 +15,7 @@ spring:
     import: optional:aws-parameterstore:/myapp/
 
   datasource:
-    driver-class-name: oracle.jdbc.OracleDriver
+    driver-class-name: oracle.jdbc.OracleDriver   
     url: ${db.url}
     username: ${db.username}
     password: ${db.password}
@@ -37,6 +37,14 @@ spring:
       enabled: true
     restart:
       enabled: true
+
+  spring:
+    cloud:
+      aws:
+        region:
+          static: ap-northeast-2 # 실제 리전
+        credentials:
+          profile-name: default # 또는 IAM 역할로 설정
 
 # MyBatis 설정
 mybatis:

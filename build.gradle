@@ -62,6 +62,9 @@ dependencies {
 	
 	//war파일을 생성 시 내장 톰킷 라이브러리 제어시키는 설정(외부 배포를 위해)
 	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
+
+    //AWS Systems Manager Parameter Store 의존성 추가
+    implementation 'io.awspring.cloud:spring-cloud-starter-aws-parameter-store-config'
 }
 
 tasks.named('test') {

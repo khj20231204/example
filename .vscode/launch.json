@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-CmtProjectApplication<cmtProject-example>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.example.cmtProject.CmtProjectApplication",
+            "projectName": "cmtProject-example",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
