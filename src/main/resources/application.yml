@@ -60,6 +60,9 @@ logging:
     org.mybatis: INFO
     com.example: INFO
 
+    org.springframework.cloud: DEBUG
+    org.springframework.boot.context.config: DEBUG
+
 #uploadBaseLocation: D:/profile
 uploadBaseLocation: /usr/local/cmt
 ProfileImgLocation: /images/profile
