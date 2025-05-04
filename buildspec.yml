@@ -4,8 +4,6 @@ phases:
   install:
     runtime-versions:
       java: corretto21  # AWS가 제공하는 JDK 21 사용
-    commands:     
-      - echo Clean install phase complete (SDKMAN 제거됨)
   pre_build:
     commands:
       - echo Build started on `date`
@@ -20,7 +18,6 @@ phases:
   post_build:
     commands:
       - echo Build and packaging completed on `date`
-
 artifacts:
   files:
     - myapp.war
