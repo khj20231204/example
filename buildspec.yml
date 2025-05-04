@@ -4,8 +4,7 @@ phases:
   install:
     runtime-versions:
       java: corretto21  # AWS가 제공하는 JDK 21 사용
-    commands:
-      - yum update -y
+    commands:     
       - echo Clean install phase complete (SDKMAN 제거됨)
   pre_build:
     commands:
